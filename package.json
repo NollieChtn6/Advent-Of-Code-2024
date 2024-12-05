@@ -4,7 +4,17 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "npx ts-node"
+		"start": "npx ts-node",
+		"start:01-1": "npx ts-node src/day_01/day_01-1.ts",
+		"start:01-2": "npx ts-node src/day_01/day_01-2.ts",
+		"start:02-1": "npx ts-node src/day_02/day_02-1.ts",
+		"start:02-2": "npx ts-node src/day_02/day_02-2.ts",
+		"start:03-1": "npx ts-node src/day_03/day_03-1.ts",
+		"start:03-2": "npx ts-node src/day_03/day_03-2.ts",
+		"start:04-1": "npx ts-node src/day_04/day_04-1.ts",
+		"start:04-2": "npx ts-node src/day_04/day_04-2.ts",
+		"start:05-1": "npx ts-node src/day_05/day_05-1.ts",
+		"start:05-2": "npx ts-node src/day_05/day_05-2.ts"
 	},
 	"keywords": [],
 	"author": "",
