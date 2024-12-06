@@ -54,3 +54,20 @@ A little something to reflect upon what I have had the opportunity to practice s
 
 - Storing extracted instructions in arrays and iterating through them to compute results conditionally,
 - Transforming raw string instructions into numerical data and applying arithmetic operations.
+
+## Day 4 :star: :star:
+
+🎯 Goal: Count patterns and sequences in grids
+
+**Grid manipulation:**
+
+- Turning input puzzle into a 2D grid using nested arrays.
+- Extracting data based on lines, columns and diagonals:
+  - horizontal lines: iterating over rows.
+  - vertical lines: iterating over columns by swapping `x` (column index) and `y` (row index).
+  - diagonal lines (top-left → bottom-right & top-right → bottom-left): identifying valid diagonal sequences in all directions thanks to offsets
+
+**Check patterns matching in strings:**
+
+- Counting occurrences of a specific string in the grid across all directions (horizontally, vertically, diagonally), both in forward and reverse directions.
+- Identifying smaller patterns in cross shapes centered on a grid cell.
