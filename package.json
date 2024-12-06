@@ -14,7 +14,9 @@
 		"start:04-1": "npx ts-node src/day_04/day_04-1.ts",
 		"start:04-2": "npx ts-node src/day_04/day_04-2.ts",
 		"start:05-1": "npx ts-node src/day_05/day_05-1.ts",
-		"start:05-2": "npx ts-node src/day_05/day_05-2.ts"
+		"start:05-2": "npx ts-node src/day_05/day_05-2.ts",
+		"start:06-1": "npx ts-node src/day_06/day_06-1.ts",
+		"start:06-2": "npx ts-node src/day_06/day_06-2.ts"
 	},
 	"keywords": [],
 	"author": "",
