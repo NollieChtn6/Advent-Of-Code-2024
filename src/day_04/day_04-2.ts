@@ -11,14 +11,14 @@ async function countPatternOccurrences(filePath: string): Promise<number> {
 
 	let numberOfOccurrences = 0;
 
-	for (let row = 1; row < grid.length - 1; row++) {
-		for (let col = 1; col < grid[row].length - 1; col++) {
-			if (grid[row][col] === centerLetter) {
-				const tlValue = grid[row - 1]?.[col - 1];
-				const brValue = grid[row + 1]?.[col + 1];
+	for (let y = 1; y < grid.length - 1; y++) {
+		for (let x = 1; x < grid[y].length - 1; x++) {
+			if (grid[y][x] === centerLetter) {
+				const tlValue = grid[y - 1]?.[x - 1];
+				const brValue = grid[y + 1]?.[x + 1];
 
-				const trValue = grid[row - 1]?.[col + 1];
-				const blValue = grid[row + 1]?.[col - 1];
+				const trValue = grid[y - 1]?.[x + 1];
+				const blValue = grid[y + 1]?.[x - 1];
 
 				const tlBrIsValid =
 					(tlValue === "M" && brValue === "S") ||
