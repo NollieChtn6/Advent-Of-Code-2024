@@ -5,16 +5,16 @@ async function countWordOccurrences(filePath: string): Promise<number> {
 	const rawInput = await fs.readFile(filePath, "utf-8");
 	const grid = rawInput.split("\n").map((line) => line.split(""));
 
-	const horizontalLines = grid.map((row) => row.join(""));
+	const horizontalLines = grid.map((x) => x.join(""));
 	// console.log("Horizontal lines:", horizontalLines);
 
 	const verticalLines: string[] = [];
-	for (let col = 0; col < grid[0].length; col++) {
-		let column = "";
-		for (let row = 0; row < grid.length; row++) {
-			column += grid[row][col];
+	for (let y = 0; y < grid[0].length; y++) {
+		let yumn = "";
+		for (let x = 0; x < grid.length; x++) {
+			yumn += grid[x][y];
 		}
-		verticalLines.push(column);
+		verticalLines.push(yumn);
 	}
 	// console.log("Vertical lines:", verticalLines);
 
@@ -22,10 +22,10 @@ async function countWordOccurrences(filePath: string): Promise<number> {
 	const diagonalLinesTopLeftToBottomRight: string[] = [];
 	for (let d = 0; d < grid.length + grid[0].length - 1; d++) {
 		let diagonal = "";
-		for (let row = 0; row < grid.length; row++) {
-			const col = d - row;
-			if (col >= 0 && col < grid[0].length) {
-				diagonal += grid[row][col];
+		for (let x = 0; x < grid.length; x++) {
+			const y = d - x;
+			if (y >= 0 && y < grid[0].length) {
+				diagonal += grid[x][y];
 			}
 		}
 		if (diagonal) diagonalLinesTopLeftToBottomRight.push(diagonal);
@@ -35,10 +35,10 @@ async function countWordOccurrences(filePath: string): Promise<number> {
 	const diagonalLinesTopRightToBottomLeft: string[] = [];
 	for (let d = 0; d < grid.length + grid[0].length - 1; d++) {
 		let diagonal = "";
-		for (let row = 0; row < grid.length; row++) {
-			const col = row - (d - grid[0].length + 1);
-			if (col >= 0 && col < grid[0].length) {
-				diagonal += grid[row][col];
+		for (let x = 0; x < grid.length; x++) {
+			const y = x - (d - grid[0].length + 1);
+			if (y >= 0 && y < grid[0].length) {
+				diagonal += grid[x][y];
 			}
 		}
 		if (diagonal) diagonalLinesTopRightToBottomLeft.push(diagonal);
