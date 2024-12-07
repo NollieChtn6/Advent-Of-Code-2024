@@ -28,10 +28,8 @@ function move(position: Position, currentDirection: Direction): Position {
 	if (currentDirection === "up") return { x: position.x, y: position.y - 1 };
 	if (currentDirection === "right") return { x: position.x + 1, y: position.y };
 	if (currentDirection === "down") return { x: position.x, y: position.y + 1 };
-	// console.log("Position on grid:", {
-	// 	x: position.x - 1,
-	// 	y: position.y,
-	// });
+	// console.log("Position on grid:", position);
+
 	return { x: position.x - 1, y: position.y };
 }
 
