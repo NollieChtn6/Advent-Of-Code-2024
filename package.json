@@ -22,7 +22,9 @@
 		"start:08-1": "npx ts-node src/day_08/day_08-1.ts",
 		"start:08-2": "npx ts-node src/day_08/day_08-2.ts",
 		"start:09-1": "npx ts-node src/day_09/day_09-1.ts",
-		"start:09-2": "npx ts-node src/day_09/day_09-2.ts"
+		"start:09-2": "npx ts-node src/day_09/day_09-2.ts",
+		"start:10-1": "npx ts-node src/day_10/day_10-1.ts",
+		"start:10-2": "npx ts-node src/day_10/day_10-2.ts"
 	},
 	"keywords": [],
 	"author": "",
